@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0a0e17; }
+      .grid-pattern { stroke: #151e2e; stroke-width: 1; }
+      .card-bg { fill: #111827; stroke: #1f293d; stroke-width: 1.5; rx: 12px; }
+      .card-header-bg { fill: #162032; rx: 6px; }
+      .arrow { stroke: #38bdf8; stroke-width: 2; fill: none; stroke-dasharray: 4 2; }
+      .arrow-solid { stroke: #38bdf8; stroke-width: 2; fill: none; }
+      .arrow-head { fill: #38bdf8; }
+      .title-main { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; font-size: 20px; font-weight: 700; fill: #f8fafc; letter-spacing: -0.3px; }
+      .subtitle-main { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; font-size: 13px; font-weight: 400; fill: #94a3b8; }
+      .step-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; fill: #38bdf8; letter-spacing: 0.5px; }
+      .card-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; font-size: 15px; font-weight: 600; fill: #f1f5f9; }
+      .card-sub { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 600; fill: #38bdf8; }
+      .card-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; font-size: 12.5px; fill: #94a3b8; line-height: 1.4; }
+      .badge-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+      .tag-emerald { fill: #064e3b; stroke: #059669; }
+      .tag-emerald-text { fill: #34d399; }
+      .tag-cyan { fill: #0c4a6e; stroke: #0284c7; }
+      .tag-cyan-text { fill: #38bdf8; }
+      .tag-indigo { fill: #312e81; stroke: #4f46e5; }
+      .tag-indigo-text { fill: #818cf8; }
+      .tag-purple { fill: #581c87; stroke: #9333ea; }
+      .tag-purple-text { fill: #c084fc; }
+      .tag-amber { fill: #451a03; stroke: #d97706; }
+      .tag-amber-text { fill: #fbbf24; }
+      .tag-rose { fill: #4c0519; stroke: #e11d48; }
+      .tag-rose-text { fill: #fb7185; }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" class="arrow-head" />
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="520" class="bg" rx="16" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Subtle Blueprint Grid Lines -->
+  <g class="grid-pattern" opacity="0.35">
+    <line x1="40" y1="80" x2="1160" y2="80" />
+    <line x1="40" y1="270" x2="1160" y2="270" />
+    <line x1="40" y1="460" x2="1160" y2="460" />
+    <line x1="400" y1="80" x2="400" y2="460" />
+    <line x1="800" y1="80" x2="800" y2="460" />
+  </g>
+
+  <!-- Header Banner -->
+  <g transform="translate(48, 45)">
+    <circle cx="6" cy="-6" r="4" fill="#38bdf8" />
+    <text x="20" y="0" class="title-main">NeuroGLP Pipeline Architecture</text>
+    <text x="340" y="-1" class="subtitle-main">End-to-End High-Dimensional Topological Pharmacovigilance Workflow</text>
+  </g>
+
+  <!-- ==================== ROW 1 (Stages 1, 2, 3) ==================== -->
+
+  <!-- CARD 1: OpenFDA Ingestion -->
+  <g transform="translate(48, 90)">
+    <rect width="320" height="155" class="card-bg" />
+    <rect x="16" y="16" width="70" height="20" rx="4" class="tag-emerald" stroke-width="1"/>
+    <text x="51" y="30" text-anchor="middle" class="badge-text tag-emerald-text">STAGE 01</text>
+    <text x="96" y="31" class="card-sub">DATA INGESTION</text>
+    <text x="16" y="62" class="card-title">OpenFDA ICSR Query</text>
+    <text x="16" y="86" class="card-text">&#8226; 6,680 Semaglutide &amp; Tirzepatide Reports</text>
+    <text x="16" y="106" class="card-text">&#8226; Query Filter: MedDRA Psychiatric PTs</text>
+    <text x="16" y="126" class="card-text">&#8226; Extracted Demographics &amp; Hospitalizations</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 370 167 L 418 167" class="arrow-solid" marker-end="url(#arrowhead)"/>
+
+  <!-- CARD 2: Brand Normalization -->
+  <g transform="translate(430, 90)">
+    <rect width="320" height="155" class="card-bg" />
+    <rect x="16" y="16" width="70" height="20" rx="4" class="tag-cyan" stroke-width="1"/>
+    <text x="51" y="30" text-anchor="middle" class="badge-text tag-cyan-text">STAGE 02</text>
+    <text x="96" y="31" class="card-sub">HARMONIZATION</text>
+    <text x="16" y="62" class="card-title">Brand-to-Generic Normalizer</text>
+    <text x="16" y="86" class="card-text">&#8226; 341 Commercial Brand Entities Mapped</text>
+    <text x="16" y="106" class="card-text">&#8226; Salt &amp; Dosage Formulation Stripping</text>
+    <text x="16" y="126" class="card-text">&#8226; Multi-Ingredient Entity Disaggregation</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 752 167 L 800 167" class="arrow-solid" marker-end="url(#arrowhead)"/>
+
+  <!-- CARD 3: Sparse Binary Feature Matrix -->
+  <g transform="translate(812, 90)">
+    <rect width="340" height="155" class="card-bg" />
+    <rect x="16" y="16" width="70" height="20" rx="4" class="tag-indigo" stroke-width="1"/>
+    <text x="51" y="30" text-anchor="middle" class="badge-text tag-indigo-text">STAGE 03</text>
+    <text x="96" y="31" class="card-sub">FEATURE MATRIX</text>
+    <text x="16" y="62" class="card-title">Sparse Indicator Space (N × D)</text>
+    <text x="16" y="86" class="card-text">&#8226; Binary Presence-Absence Matrix</text>
+    <text x="16" y="106" class="card-text">&#8226; 0.5% Minimum Frequency Noise Cutoff</text>
+    <text x="16" y="126" class="card-text">&#8226; Strict Zero-NaN Mathematical Validation</text>
+  </g>
+
+  <!-- Connector from Row 1 (Card 3) down to Row 2 (Card 4) -->
+  <path d="M 982 247 L 982 278 L 208 278 L 208 300" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- ==================== ROW 2 (Stages 4, 5, 6) ==================== -->
+
+  <!-- CARD 4: 3D UMAP Manifold -->
+  <g transform="translate(48, 310)">
+    <rect width="320" height="165" class="card-bg" />
+    <rect x="16" y="16" width="70" height="20" rx="4" class="tag-purple" stroke-width="1"/>
+    <text x="51" y="30" text-anchor="middle" class="badge-text tag-purple-text">STAGE 04</text>
+    <text x="96" y="31" class="card-sub">MANIFOLD EMBEDDING</text>
+    <text x="16" y="62" class="card-title">3D Topological UMAP</text>
+    <text x="16" y="86" class="card-text">&#8226; Jaccard Distance on Co-Prescription Sets</text>
+    <text x="16" y="106" class="card-text">&#8226; Dimension Reduction: D → 3 Components</text>
+    <text x="16" y="126" class="card-text">&#8226; Pinned Determinism: random_state=42</text>
+  </g>
+
+  <!-- Arrow 4 -> 5 -->
+  <path d="M 370 392 L 418 392" class="arrow-solid" marker-end="url(#arrowhead)"/>
+
+  <!-- CARD 5: HDBSCAN Density Clustering -->
+  <g transform="translate(430, 310)">
+    <rect width="320" height="165" class="card-bg" />
+    <rect x="16" y="16" width="70" height="20" rx="4" class="tag-amber" stroke-width="1"/>
+    <text x="51" y="30" text-anchor="middle" class="badge-text tag-amber-text">STAGE 05</text>
+    <text x="96" y="31" class="card-sub">DENSITY CLUSTERING</text>
+    <text x="16" y="62" class="card-title">HDBSCAN Unsupervised</text>
+    <text x="16" y="86" class="card-text">&#8226; Continuous Density-Based Partitioning</text>
+    <text x="16" y="106" class="card-text">&#8226; Zero Pre-Specified k Assumptions</text>
+    <text x="16" y="126" class="card-text">&#8226; Isolates Polypharmacy Boundary Noise (6.2%)</text>
+  </g>
+
+  <!-- Arrow 5 -> 6 -->
+  <path d="M 752 392 L 800 392" class="arrow-solid" marker-end="url(#arrowhead)"/>
+
+  <!-- CARD 6: Clinical Phenotypes & Risk Rule Engine -->
+  <g transform="translate(812, 310)">
+    <rect width="340" height="165" class="card-bg" />
+    <rect x="16" y="16" width="70" height="20" rx="4" class="tag-rose" stroke-width="1"/>
+    <text x="51" y="30" text-anchor="middle" class="badge-text tag-rose-text">STAGE 06</text>
+    <text x="96" y="31" class="card-sub">CLINICAL RISK ENGINE</text>
+    <text x="16" y="62" class="card-title">3 Phenotypes &amp; Pharmacokinetics</text>
+    <text x="16" y="86" class="card-text">&#8226; C0: Antidepressant PK Shift (OR 8.5)</text>
+    <text x="16" y="106" class="card-text">&#8226; C1: Cardiometabolic Multi-Morbidity (OR 9.2)</text>
+    <text x="16" y="126" class="card-text">&#8226; C2: Oral Contraceptive Breakthrough (OR 12.4)</text>
+  </g>
+
+  <!-- Footer Tag -->
+  <g transform="translate(48, 500)">
+    <text x="0" y="0" class="subtitle-main" font-size="11px">NeuroGLP v1.0 &#8226; Pharmacovigilance &amp; Topological Bioinformatics &#8226; Open-Access MIT License</text>
+  </g>
+</svg>
